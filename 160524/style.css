@@ -1,0 +1,29 @@
+h1{
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    font-size: 4em;
+    z-index: 5;
+}
+
+.atama{
+    background-color: black;
+    color:white;
+    position: relative;
+    height: 50px;
+}
+
+.topBox{
+    display: inline-block;
+}
+
+.topBox img{
+    position: relative;
+    z-index: 0;
+}
+
+.ashi{
+    position: relative;
+    height: 50px;
+}
