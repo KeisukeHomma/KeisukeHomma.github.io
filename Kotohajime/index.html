@@ -4,36 +4,146 @@
   <meta charset="UTF-8">
   <title>ことはじめ.com</title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+        integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+          integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+          crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+  <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
 
-<header class="container">
-  <div class="row">
-    <div class="col-xs-3">
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">探す</button>
-      </form>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-6">
-      <img id="logo" src="images/logo.png"></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12"></div>
-  </div>
-</header>
+<div class="container">
 
+  <!-----------------------------------------------
+                     header
+  ------------------------------------------------>
+  <header>
+    <div class="row">
+      <div class="col-xs-3">
+        <form action="/" name="search" method="get">
+          <dl class="search">
+            <dt><input type="text" name="search" value="" placeholder="Search"/></dt>
+            <dd>
+              <button><span>
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </span></button>
+            </dd>
+          </dl>
+        </form>
+      </div>
+      <div class="col-xs-6">
+        <img id="logo" src="images/logo.png">
+      </div>
+      <div class="col-xs-3">
+        <div class="login">
+          <p>ログイン・登録</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-----------------------------------------------
+                      navigation
+  ------------------------------------------------>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">学習 <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">ビジネス</a></li>
+          <li><a href="#">就職・転職</a></li>
+          <li><a href="#">趣味</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">ピックアップ</a></li>
+          <li><a href="#">ランキング</a></li>
+          <li><a href="#">その他</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+  <div class="row">
+
+      <!--div id="Glide" class="glide">
+
+        <div class="glide__arrows">
+          <button class="glide__arrow prev" data-glide-dir="<">prev</button>
+          <button class="glide__arrow next" data-glide-dir=">">next</button>
+        </div>
+
+        <div class="glide__wrapper">
+          <ul class="glide__track">
+            <li class="glide__slide">
+              <div class="col-xs-12">
+                <div class="slide1"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="col-xs-12">
+                <div class="slide2"></div>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="col-xs-12">
+                <div class="slide3"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__bullets"></div>
+
+      </div>
+      <script>
+          $("#Glide").glide({
+              type: "carousel"
+          });
+      </script-->
+  </div>
+
+
+  <div class="row">
+    <div class="col-xs-8">
+
+    </div>
+    <div class="col-xs-4">
+
+    </div>
+  </div>
+
+</div><!-- / container --->
+<script src="js/swiper.min.js"></script>
 </body>
 </html>
