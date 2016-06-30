@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    border-bottom: darkkhaki;
+
 }
 
 .navbar-form{
@@ -20,6 +20,15 @@ header{
 #logo{
     width: 100%;
     max-width: 400px;
+    margin: 0 auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#promo{
+    width: 80%;
+    max-width: 350px;
     margin: 0 auto;
     display:block;
     margin-left:auto;
