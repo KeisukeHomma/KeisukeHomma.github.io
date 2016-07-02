@@ -15,12 +15,13 @@
   <script src="js/vendor/OBJMTLLoader.js"></script>
   <script src="js/app.js"></script-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.offcanvas.min.css">
 </head>
 <body>
 <!---------------------------------------------
             ナビゲーション
 ------------------------------------------------>
-<nav class="navbar navbar-default navbar-fnt navbar-backgrnd">
+<nav class="navbar navbar-default navbar-offcanvas">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -30,15 +31,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">East Record</a>
+      <a class="navbar-brand" href="#"><img id="logo" src="images/logo-s.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">ARTIST</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Artist</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -50,23 +51,30 @@
 <header class="jumbotron">
   <div class="container">
 
-    <h1>Hello, world!</h1>
-    <p>...</p>
+    <h1>ノッテ・ノッテ・ノリマクレ</h1>
+    <p></p>
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
   </div>
 </header>
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12" id="about">asdf</div>
+    <div class="col-xs-12" id="about" title="item">
+      <img src="images/about-s.png">
+    </div>
   </div><div class="row">
-    <div class="col-xs-12" id="artist">asdf</div>
+    <div class="col-xs-12" id="artist" title="item">
+      <img src="images/artist-s.png">
+    </div>
   </div>
   <div class="row">
-    <div class="col-xs-12" id="contact">asdf</div>
+    <div class="col-xs-12" id="contact" title="item">
+      <img src="images/contact-s.png">
+    </div>
   </div>
 </div>
 
 <script src="js/color.js"></script>
+<script src="js/bootstrap.offcanvas.js"></script>
 </body>
 </html>
