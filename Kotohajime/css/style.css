@@ -87,7 +87,24 @@ dl.search dd button span{
     box-shadow: none;
 }
 
-.slide1{
-    height: 200px;
-    background-image: url("../images/P6250042.jpg");
+
+.slide-show{
+
 }
+
+.main-content{
+    margin-bottom: 50px;
+}
+
+.main-content img{
+    width: 100%;
+}
+
+.pickup{
+
+}
+
+.pickup img{
+    width: 100%;
+}
+
