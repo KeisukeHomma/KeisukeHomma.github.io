@@ -22,8 +22,6 @@ header{
     max-width: 400px;
     margin: 0 auto;
     display:block;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 #promo{
@@ -106,5 +104,37 @@ dl.search dd button span{
 
 .pickup img{
     width: 100%;
+}
+
+.art{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.art p{
+    font-size: 1.1em;
+    line-height: 1.8em;
+    font-family:  "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.art h2{
+    margin-top: 2em;
+    border-left: solid 4px #ce8483;
+    padding: 10px 0 13px 10px;
+}
+
+.main-content {
+
+}
+
+.ex{
+    padding: 10px;
+    border: solid 1px #ce8483;
+    margin-bottom: 8px;
+}
+
+cite{
+    text-decoration: none;
+    font-size: 0.7em;
 }
 
