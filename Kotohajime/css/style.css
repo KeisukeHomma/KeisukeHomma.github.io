@@ -138,3 +138,12 @@ cite{
     font-size: 0.7em;
 }
 
+.card{
+    background: white;
+    border: solid 1px #e8e8e8;
+}
+
+.art-info{
+    position: relative;
+    bottom: 5px;
+}
