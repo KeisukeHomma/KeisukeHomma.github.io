@@ -10,9 +10,16 @@
   <!-- BootstrapのJS読み込み -->
   <script src="../js/bootstrap.min.js"></script>
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <!-- jQuery library (served from Google) -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <!-- bxSlider Javascript file -->
   <script src="../jquery.bxslider/jquery.bxslider.min.js"></script>
   <!-- bxSlider CSS file -->
@@ -50,12 +57,9 @@
         </div>
       </div>
       <div class="col-xs-1">
-        ?
+
       </div>
       <div class="col-xs-2">
-        <a href="login/login.html"><div class="login">
-          <p>ログイン<br>登録</p>
-        </div></a>
       </div>
     </div>
   </header>
@@ -83,7 +87,7 @@
           <ul class="nav navbar-nav">
             <li><a href="#">学習</a></li>
             <li><a href="#">ビジネス</a></li>
-            <li><a href="">就職・転職</a></li>
+            <li><a href="../category/01.html">就職・転職</a></li>
             <li><a href="#">趣味</a></li>
           </ul>
 
@@ -104,66 +108,77 @@
   ---------------------------------->
 
   <div class="row">
-    <div class="col-xs-12 ">
-      <h1>就職・転職</h1><br>
+    <div class="col-xs-10">
+      <h1>記事を作ろう</h1><br>
     </div>
   </div>
 
 
 
-  <div class="row art-list">
+  <div class="row">
 
-    <!--  記事カード  -->
-    <div class="col-xs-6">
-      <div class="row">
-        <a href="../articles/001.html"> <div class="col-xs-offset-1 col-xs-11">
-          <div class="row card">
+    <div class="col-xs-10">
 
-            <div class="col-xs-12">
-              <img class="img-responsive" src="../images/003-2.png">
-            </div>
+      <form action="/" name="search" method="get">
+        <h4>タイトル</h4>
+        <input type="text" class="text-box">
+      </form>
 
-            <div class="col-xs-12">
-              <h4>転職に成功するには？</h4>
-              <p>確実に転職を成功させたいあなたへ。</p>
-              <div class="art-info">
-                <p>★4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016.7.5</p>
-              </div>
-            </div>
-
-          </div>
-        </div></a>
-      </div>
-    </div>
-
-    <!--  記事カード  -->
-    <div class="col-xs-6">
-      <div class="row">
-        <div class="col-xs-11 col-xs-offset-1">
-          <a href="../articles/002.html"><div class="row card">
-
-            <div class="col-xs-12">
-              <img class="img-responsive" src="../images/004.png">
-            </div>
-
-            <div class="col-xs-12">
-              <h4>就職ことはじめ</h4>
-              <p>就職準備を始める18卒の学生へ</p>
-              <div class="art-info">
-                <p>★23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016.7.5</p>
-              </div>
-            </div>
-
-          </div></a>
+      <form action="/" method="get">
+        <h4>本文</h4>
+        <div class="tool-box">
+          <p>
+            <button><span class="glyphicon glyphicon-font" aria-hidden="true"></span></button>
+            <button><span class="glyphicon glyphicon-bold" aria-hidden="true"></span></button>
+            <button><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></button>
+            <button><span class="glyphicon glyphicon-text-height" aria-hidden="true"></span></button>
+            <button><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></button>
+            <button><span class="glyphicon glyphicon-text-size" aria-hidden="true"></span></button>
+            <button><span class="glyphicon glyphicon-camera" aria-hidden="true"></span></button>
+            <button><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></button>
+          </p>
         </div>
+        <textarea name="kanso" rows="4" class="text-box" style="height: 400px;">ここに入力してください。</textarea>
+      </form>
+
+      <a href="../articles/002.html"><button class="btn btn-default" type="submit">
+        <span class="glyphicon glyphicon-send" aria-hidden="true" style="padding-right: 5px;"></span>投稿する</button>
+      </a>
+    </div>
+
+    <div class="col-xs-2">
+      <h4>&nbsp;</h4>
+      <div class="list-group list-layout">
+        <a href="#" class="list-group-item active">
+          <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></h4>
+          <p class="list-group-item-text">記事を書く</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></h4>
+          <p class="list-group-item-text">記事を管理</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></h4>
+          <p class="list-group-item-text">プロフィール</p>
+        </a>
+        <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span></h4>
+          <p class="list-group-item-text">各種設定</p>
+        </a>
       </div>
     </div>
+
+
 
   </div>
 
 
 
+  <div class="row">
+    <div class="col-xs-12" style="height: 100px;">
 
+    </div>
+  </div>
 
 </div><!-- / container --->
 

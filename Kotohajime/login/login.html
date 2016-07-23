@@ -10,6 +10,16 @@
   <!-- BootstrapのJS読み込み -->
   <script src="../js/bootstrap.min.js"></script>
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <!-- jQuery library (served from Google) -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -53,9 +63,6 @@
         ?
       </div>
       <div class="col-xs-2">
-        <a href="login/login.html"><div class="login">
-          <p>ログイン<br>登録</p>
-        </div></a>
       </div>
     </div>
   </header>
@@ -83,7 +90,7 @@
           <ul class="nav navbar-nav">
             <li><a href="#">学習</a></li>
             <li><a href="#">ビジネス</a></li>
-            <li><a href="">就職・転職</a></li>
+            <li><a href="../category/01.html">就職・転職</a></li>
             <li><a href="#">趣味</a></li>
           </ul>
 
@@ -104,66 +111,47 @@
   ---------------------------------->
 
   <div class="row">
-    <div class="col-xs-12 ">
-      <h1>就職・転職</h1><br>
+    <div class="col-xs-offset1 col-xs-10 col-xs-offset-1 ">
+      <h1>ログイン</h1><br>
+    </div>
+    <div class="col-xs-offset2 col-xs-8 col-xs-offset-2">
+      <h4>ログインして、もっと楽しもう</h4>
     </div>
   </div>
 
 
 
-  <div class="row art-list">
+  <div class="row">
 
-    <!--  記事カード  -->
-    <div class="col-xs-6">
-      <div class="row">
-        <a href="../articles/001.html"> <div class="col-xs-offset-1 col-xs-11">
-          <div class="row card">
+    <div class="col-xs-offset2 col-xs-8 col-xs-offset-2">
+      <form action="/" name="search" method="get">
+        <dl class="search">
+          <dt><input type="text" name="search" value="" placeholder="E-mail"/></dt>
+        </dl>
+      </form>
 
-            <div class="col-xs-12">
-              <img class="img-responsive" src="../images/003-2.png">
-            </div>
+      <form action="/" name="search" method="get">
+        <dl class="search">
+          <dt><input type="password" name="search" value="" placeholder="Password"/></dt>
+        </dl>
+      </form>
 
-            <div class="col-xs-12">
-              <h4>転職に成功するには？</h4>
-              <p>確実に転職を成功させたいあなたへ。</p>
-              <div class="art-info">
-                <p>★4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016.7.5</p>
-              </div>
-            </div>
-
-          </div>
-        </div></a>
-      </div>
+      <a href="production.html"><button class="btn btn-default" type="submit" style="float: right;">Login</button></a>
     </div>
 
-    <!--  記事カード  -->
-    <div class="col-xs-6">
-      <div class="row">
-        <div class="col-xs-11 col-xs-offset-1">
-          <a href="../articles/002.html"><div class="row card">
 
-            <div class="col-xs-12">
-              <img class="img-responsive" src="../images/004.png">
-            </div>
-
-            <div class="col-xs-12">
-              <h4>就職ことはじめ</h4>
-              <p>就職準備を始める18卒の学生へ</p>
-              <div class="art-info">
-                <p>★23&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016.7.5</p>
-              </div>
-            </div>
-
-          </div></a>
-        </div>
-      </div>
-    </div>
 
   </div>
 
 
 
+  <div class="row">
+    <div class="col-xs-12">
 
+    </div>
+
+
+  </div>
 
 </div><!-- / container --->
 
