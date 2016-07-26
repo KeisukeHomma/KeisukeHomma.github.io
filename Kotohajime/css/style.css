@@ -171,3 +171,17 @@ cite{
     font-size: 6px;
     text-align: center;
 }
+
+.message{
+    background: #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid 1px #adadad;
+}
+
+.message p{
+    font-family: "Hiragino Maru Gothic W4 JIS2004",
+    "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "メイリオ", Meiryo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-bottom: solid 1px #cccccc;
+}
